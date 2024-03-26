@@ -32,15 +32,23 @@ function ContactForm() {
       return;
     } else {
       setError({ ...error, required: false });
-    };
-
+    }
+  
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
-    const options = { publicKey: process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY };
-
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+  
     try {
-      const res = await emailjs.send(serviceID, templateID, input, options);
-
+      // Pass name and email as additional parameters
+      const templateParams = {
+        to_name: "Harsh Yadav", // Change this to the name of the recipient if needed
+        from_name: input.name,
+        from_email: input.email,
+        message: input.message,
+      };
+  
+      const res = await emailjs.send(serviceID, templateID, templateParams, publicKey);
+  
       if (res.status === 200) {
         toast.success('Message sent successfully!');
         setInput({
@@ -48,11 +56,12 @@ function ContactForm() {
           email: '',
           message: '',
         });
-      };
+      }
     } catch (error) {
       toast.error(error?.text || error);
-    };
+    }
   };
+  
 
   return (
     <div className="">
@@ -69,6 +78,7 @@ function ContactForm() {
             <input
               className="bg-[#10172d] w-full border rounded-md border-[#353a52] focus:border-[#16f2b3] ring-0 outline-0 transition-all duration-300 px-3 py-2"
               type="text"
+              name='from_name'
               maxLength="100"
               required={true}
               onChange={(e) => setInput({ ...input, name: e.target.value })}
@@ -84,6 +94,7 @@ function ContactForm() {
               type="email"
               maxLength="100"
               required={true}
+              name='from_email'
               value={input.email}
               onChange={(e) => setInput({ ...input, email: e.target.value })}
               onBlur={() => {
