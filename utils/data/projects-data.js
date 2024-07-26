@@ -6,13 +6,24 @@ import travel from "/public/image/travel.jpg";
 export const projectsData = [
   {
     id: 1,
+    name: "Service App ",
+    description:'This MERN stack project showcases a dynamic website with CRUD operations and service displays. The React frontend, hosted on Netlify, utilizes Context API, useState, and useEffect for efficient state management. The Node.js backend, deployed on Render, implements controllers, routes, services, and token handling. MongoDB serves as the database, ensuring seamless data flow between frontend and backend components.',
+    tools: ["HTML", "CSS", "Rapid API", "Material UI"],
+    role: "Developer",
+    code: "https://github.com/HarshS20-742/Mern_project",
+    demo: "https://harsh-mern-project.netlify.app",
+    // image: crefin,
+  },
+
+  {
+    id: 1,
     name: "Fitness App ",
     description:"Creared a fitness app functionality to choose exercise categories and specofic muscle groups, brose more thaan 1000 exercises with practical examples, pagination, exercise details, pool related videos from youtube and display similar exercises.",
     tools: ["HTML", "CSS", "Rapid API", "Material UI"],
     role: "Developer",
-    code: "",
-    demo: "",
-    image: crefin,
+    // code: "",
+    // demo: "https://github.com/HarshS20-742/Mern_project",
+    // image: crefin,
   },
   {
     id: 2,
@@ -21,9 +32,9 @@ export const projectsData = [
       "It is a simplified slot machine small project in which the user can select number of lines on which he wants to bet and related to that he can win the bet amount. Develop the project to get insides in the JavaScript functions",
     tools: ["NodeJS"],
     role: "Developer",
-    code: "",
-    demo: "",
-    image: travel, // Assign the value of the variable containing the image path
+    // code: "",
+    // demo: "",
+    // image: travel, // Assign the value of the variable containing the image path
   },
   {
     id: 3,
@@ -34,8 +45,8 @@ export const projectsData = [
     tools: ["HTML", "CSS", "JavaScript"],
     code: "",
     role: "Developer",
-    demo: "",
-    image: realEstate,
+    // demo: "",
+    // image: realEstate,
   },
   {
     id: 4,
@@ -43,9 +54,9 @@ export const projectsData = [
     description:
       "I have created a fast and responsive chess game with real time multiplayer functionality.",
     tools: ["ReactJS", "Material UI", "socket.io"],
-    code: "",
-    demo: "",
-    image: ayla,
+    // code: "",
+    // demo: "",
+    // image: ayla,
     role: "Developer",
   },
   {
@@ -54,8 +65,8 @@ export const projectsData = [
     description:
       "I have created a simple flutter application in which you can see your body mass index by entering the relative information.",
     tools: ["Flutter"],
-    code: "",
-    demo: "",
+    // code: "",
+    // demo: "",
     // image: ayla,
     role: "Android Developer",
   },

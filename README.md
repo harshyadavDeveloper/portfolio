@@ -67,6 +67,7 @@ cd developer-portfolio
 ### Install packages from the root directory
 
 ```bash
+# to run this project you should node version >= 18.17.0
 npm install
 # or
 yarn install
