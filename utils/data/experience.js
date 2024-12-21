@@ -3,14 +3,14 @@ export const experiences = [
     id: 1,
     title: 'Software Developer',
     company: "DreamLogic Infosystems",
-    duration: "(June 2023 - Present)"
+    duration: "(June 2023 - July 2024)"
   },
-  // {
-  //   id: 2,
-  //   title: "FullStack Developer",
-  //   company: "Fiverr (freelance)",
-  //   duration: "(Jun 2021 - Jan 2022)"
-  // },
+  {
+    id: 2,
+    title: "Software Engineer",
+    company: "Goa Electronics Limited",
+    duration: "(August 2025 - Present)"
+  },
   // {
   //   id: 3,
   //   title: "Self Employed",
