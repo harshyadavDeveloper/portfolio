@@ -9,7 +9,7 @@ export const experiences = [
     id: 2,
     title: "Software Engineer",
     company: "Goa Electronics Limited",
-    duration: "(August 2025 - Present)"
+    duration: "(August 2024 - Present)"
   },
   // {
   //   id: 3,
