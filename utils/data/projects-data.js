@@ -5,6 +5,17 @@ import travel from "/public/image/travel.jpg";
 
 export const projectsData = [
   {
+    id: 0,
+    name: "Food Go",
+    description:
+      "A comprehensive Flutter-based food delivery app with Firebase backend, featuring seamless food ordering, real-time order tracking, and integrated payment solutions. Users can browse categorized food items, place orders, track delivery status, and manage their wallet balance. The app includes Stripe payment gateway integration for secure transactions and a dedicated admin panel for restaurant owners to manage menu items, approve orders, and monitor active users. Built with modern UI/UX principles and real-time database synchronization for optimal user experience",
+    tools: ["Flutter", "Firebase", "Rapid API", "Stripe"],
+    role: "Developer",
+    code: "https://github.com/harshyadavDeveloper/flutter-food-go",
+    demo: "https://www.dropbox.com/scl/fi/xla4keq12iwo75qeb0bvh/app-arm64-v8a-release.apk?rlkey=y0edoaktm6qtmm01vui5nk9du&st=0op9vdpo&dl=0",
+    // image: crefin,
+  },
+  {
     id: 1,
     name: "Service App ",
     description:
