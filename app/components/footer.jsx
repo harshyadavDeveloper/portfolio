@@ -17,7 +17,7 @@ function Footer() {
           <div className="flex items-center gap-5">
             {/* <Link
               target="_blank"
-              href="https://github.com/HarshS20-742"
+              href="https://github.com/harshyadavDeveloper/"
               className="flex items-center gap-2 uppercase hover:text-[#16f2b3]"
             >
               <IoStar />

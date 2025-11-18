@@ -7,7 +7,7 @@ export const personalData = {
   email: "harshyadav5939@gmail.com",
   phone: "+91 9112017081",
   address: "Margao, Goa, INDIA",
-  github: "https://github.com/HarshS20-742",
+  github: "https://github.com/harshyadavDeveloper/",
   facebook: "https://www.facebook.com",
   linkedIn: "https://www.linkedin.com/in/harsh-yadav-041062254",
   twitter: "https://twitter.com/",
