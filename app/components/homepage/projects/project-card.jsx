@@ -1,15 +1,39 @@
-// @flow strict
+"use client";
 
-import * as React from 'react';
+// @flow strict
+import * as React from "react";
+import Image from "next/image";
+import Carousel from "../../Carousel";
 
 function ProjectCard({ project }) {
+  const images = [
+    "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
+    "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+    "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
+  ];
+
+  const [current, setCurrent] = React.useState(0);
+
+  const nextSlide = () => {
+    setCurrent((prev) => (prev + 1) % images.length);
+  };
+
+  const prevSlide = () => {
+    setCurrent((prev) => (prev - 1 + images.length) % images.length);
+  };
 
   return (
-    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full">
+    <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full overflow-hidden">
+
+      {/* 🔥 Image Carousel */}
+      <Carousel />
+
+      {/* Existing UI */}
       <div className="flex flex-row">
         <div className="h-[1px] w-full bg-gradient-to-r from-transparent via-pink-500 to-violet-600"></div>
         <div className="h-[1px] w-full bg-gradient-to-r from-violet-600 to-transparent"></div>
       </div>
+
       <div className="px-4 lg:px-8 py-3 lg:py-5 relative">
         <div className="flex flex-row space-x-1 lg:space-x-2 absolute top-1/2 -translate-y-1/2">
           <div className="h-2 w-2 lg:h-3 lg:w-3 rounded-full bg-red-400"></div>
@@ -20,69 +44,87 @@ function ProjectCard({ project }) {
           {project.name}
         </p>
       </div>
+
       <div className="overflow-hidden border-t-[2px] border-indigo-900 px-4 lg:px-8 py-4 lg:py-8">
         <code className="font-mono text-xs md:text-sm lg:text-base">
-          <div className="blink">
+          <div>
             <span className="mr-2 text-pink-500">const</span>
             <span className="mr-2 text-white">project</span>
             <span className="mr-2 text-pink-500">=</span>
-            <span className="text-gray-400">{'{'}</span>
+            <span className="text-gray-400">{"{"}</span>
           </div>
+
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">name:</span>
-            <span className="text-gray-400">{`'`}</span>
-            <span className="text-amber-300">{project.name}</span>
-            <span className="text-gray-400">{`',`}</span>
+            <span className="text-amber-300">{`'${project.name}',`}</span>
           </div>
 
           <div className="ml-4 lg:ml-8 mr-2">
             <span className=" text-white">tools:</span>
             <span className="text-gray-400">{` ['`}</span>
-            {
-              project.tools.map((tag, i) => (
-                <React.Fragment key={i}>
-                  <span className="text-amber-300">{tag}</span>
-                  {
-                    project.tools.length - 1 !== i &&
-                    <span className="text-gray-400">{`', '`}</span>
-                  }
-                </React.Fragment>
-              ))
-            }
-            <span className="text-gray-400">{"],"}</span>
+
+            {project.tools?.map((tag, i) => (
+              <React.Fragment key={i}>
+                <span className="text-amber-300">{tag}</span>
+
+                {project.tools.length - 1 !== i && (
+                  <span className="text-gray-400">{`', '`}</span>
+                )}
+              </React.Fragment>
+            ))}
+
+            <span className="text-gray-400">{`'],`}</span>
           </div>
+
           <div>
             <span className="ml-4 lg:ml-8 mr-2 text-white">myRole:</span>
-            <span className="text-orange-400">{project.role}</span>
-            <span className="text-gray-400">,</span>
+            <span className="text-orange-400">{project.role},</span>
           </div>
+
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Description:</span>
-            <span className="text-cyan-400">{' ' + project.description}</span>
-            <span className="text-gray-400">,</span>
+            <span className="text-cyan-400">
+              {" " + project.description},
+            </span>
           </div>
+
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Code:</span>
-            <span className="text-cyan-400"><a href={project.code  ?? ""} target='_blank' rel='noopener noreferrer'  className="text-cyan-400 hover:underline">{' ' + project.code  ?? ""}</a></span>
+            {project.code && (
+              <a
+                href={project.code}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-400 hover:underline ml-1"
+              >
+                View
+              </a>
+            )}
             <span className="text-gray-400">,</span>
           </div>
+
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Demo:</span>
-            <span className="text-cyan-400"><a
-              href={project.demo ?? ""}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-cyan-400 hover:underline"
-            >
-              {' ' + project.demo ?? ""}
-            </a></span>
+            {project.demo && (
+              <a
+                href={project.demo}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cyan-400 hover:underline ml-1"
+              >
+                Live
+              </a>
+            )}
             <span className="text-gray-400">,</span>
           </div>
-          <div><span className="text-gray-400">{`};`}</span></div>
+
+          <div>
+            <span className="text-gray-400">{"};"}</span>
+          </div>
         </code>
       </div>
     </div>
   );
-};
+}
 
 export default ProjectCard;

@@ -3,7 +3,7 @@ import crefin from "/public/image/crefin.jpg";
 import realEstate from "/public/image/real-estate.jpg";
 import travel from "/public/image/travel.jpg";
 
-export const projectsData = [
+export const personalProjects  = [
   {
     id: 0,
     name: "Chatify",
@@ -115,6 +115,28 @@ export const projectsData = [
     // image: ayla,
     role: "Android Developer",
   },
+];
+
+export const professionalProjects  = [
+  {
+    name: "Company Dashboard",
+    tools: ["React", "Redux"],
+    role: "Frontend Engineer",
+    description: "Worked at XYZ company",
+    code: "",
+    demo: ""
+  }
+];
+
+export const freelanceProjects  = [
+  {
+    name: "Client Website",
+    tools: ["Next.js"],
+    role: "Freelancer",
+    description: "Built for a client",
+    code: "",
+    demo: ""
+  }
 ];
 
 // Do not remove any property.
