@@ -9,20 +9,23 @@ import {
 const ProjectsSection = () => {
   return (
     <>
-      <Projects
-        title="PERSONAL PROJECTS"
-        projects={personalProjects}
-      />
 
       <Projects
         title="PROFESSIONAL EXPERIENCE"
         projects={professionalProjects}
       />
-
       <Projects
         title="FREELANCE PROJECTS"
         projects={freelanceProjects}
       />
+      <Projects
+        title="PERSONAL PROJECTS"
+        projects={personalProjects}
+      />
+
+
+
+
     </>
   );
 };
