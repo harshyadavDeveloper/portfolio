@@ -9,6 +9,7 @@ function Carousel({ images = [], projectName = "Project" }) {
 
   const [[current, direction], setCurrent] = React.useState([0, 0]);
   const [isPaused, setIsPaused] = React.useState(false);
+  const [isPreviewOpen, setIsPreviewOpen] = React.useState(false);
 
   // 👉 Auto-play (ONLY if multiple images)
   React.useEffect(() => {
@@ -96,6 +97,7 @@ function Carousel({ images = [], projectName = "Project" }) {
                 if (swipe < -swipeConfidenceThreshold) paginate(1);
                 else if (swipe > swipeConfidenceThreshold) paginate(-1);
               }}
+              onClick={() => setIsPreviewOpen(true)}
               className="absolute w-full h-full object-cover"
             />
           </AnimatePresence>
@@ -138,6 +140,60 @@ function Carousel({ images = [], projectName = "Project" }) {
           )}
         </>
       )}
+      <AnimatePresence>
+  {isPreviewOpen && (
+    <motion.div
+      className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      onClick={() => setIsPreviewOpen(false)}
+    >
+      {/* Image */}
+      <motion.img
+        src={images[current]}
+        initial={{ scale: 0.8 }}
+        animate={{ scale: 1 }}
+        exit={{ scale: 0.8 }}
+        className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
+        onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
+      />
+
+      {/* Close Button */}
+      <button
+        onClick={() => setIsPreviewOpen(false)}
+        className="absolute top-5 right-5 text-white text-2xl"
+      >
+        ✕
+      </button>
+
+      {/* Navigation */}
+      {images.length > 1 && (
+        <>
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              paginate(-1);
+            }}
+            className="absolute left-5 text-white text-3xl"
+          >
+            ◀
+          </button>
+
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              paginate(1);
+            }}
+            className="absolute right-5 text-white text-3xl"
+          >
+            ▶
+          </button>
+        </>
+      )}
+    </motion.div>
+  )}
+</AnimatePresence>
     </div>
   );
 }
