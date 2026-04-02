@@ -46,14 +46,19 @@ export const personalProjects = [
   },
   {
     id: 2,
-    name: "Service App ",
+    name: "Service App",
     description:
       "This MERN stack project showcases a dynamic website with CRUD operations and service displays. The React frontend, hosted on Netlify, utilizes Context API, useState, and useEffect for efficient state management. The Node.js backend, deployed on Render, implements controllers, routes, services, and token handling. MongoDB serves as the database, ensuring seamless data flow between frontend and backend components.",
     tools: ["React", "Node", "Rapid API", "MongoDb", "Bootstrap"],
     role: "Developer",
     code: "https://github.com/harshyadavDeveloper/mern-project-client",
     demo: "https://harsh-mern-project.netlify.app",
-    // image: crefin,
+    images: [
+      "/image/service-app/service-app-1.png",
+      "/image/service-app/service-app-2.png",
+      "/image/service-app/service-app-3.png",
+      "/image/service-app/service-app-4.png",
+    ]
   },
 
   {
