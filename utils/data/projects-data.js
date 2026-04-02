@@ -36,7 +36,13 @@ export const personalProjects = [
     role: "Developer",
     code: "https://github.com/harshyadavDeveloper/flutter-food-go",
     demo: "https://www.dropbox.com/scl/fi/xla4keq12iwo75qeb0bvh/app-arm64-v8a-release.apk?rlkey=y0edoaktm6qtmm01vui5nk9du&st=0op9vdpo&dl=0",
-    // image: crefin,
+     images: [
+      "/image/food-go/food-go-1.jpg",
+      "/image/food-go/food-go-2.jpg",
+      "/image/food-go/food-go-3.jpg",
+      "/image/food-go/food-go-4.jpg",
+      "/image/food-go/food-go-5.jpg",
+    ],
   },
   {
     id: 2,

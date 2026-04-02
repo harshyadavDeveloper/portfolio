@@ -129,11 +129,10 @@ function Carousel({ images = [], projectName = "Project" }) {
                   onClick={() =>
                     setCurrent([index, index > current ? 1 : -1])
                   }
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${
-                    index === current
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${index === current
                       ? "bg-white scale-110"
                       : "bg-white/50"
-                  }`}
+                    }`}
                 />
               ))}
             </div>
@@ -141,59 +140,59 @@ function Carousel({ images = [], projectName = "Project" }) {
         </>
       )}
       <AnimatePresence>
-  {isPreviewOpen && (
-    <motion.div
-      className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      onClick={() => setIsPreviewOpen(false)}
-    >
-      {/* Image */}
-      <motion.img
-        src={images[current]}
-        initial={{ scale: 0.8 }}
-        animate={{ scale: 1 }}
-        exit={{ scale: 0.8 }}
-        className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
-        onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
-      />
-
-      {/* Close Button */}
-      <button
-        onClick={() => setIsPreviewOpen(false)}
-        className="absolute top-5 right-5 text-white text-2xl"
-      >
-        ✕
-      </button>
-
-      {/* Navigation */}
-      {images.length > 1 && (
-        <>
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              paginate(-1);
-            }}
-            className="absolute left-5 text-white text-3xl"
+        {isPreviewOpen && (
+          <motion.div
+            className="fixed inset-0 bg-black/90 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setIsPreviewOpen(false)}
           >
-            ◀
-          </button>
+            {/* Image */}
+            <motion.img
+              src={images[current]}
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              className="max-h-[90%] max-w-[90%] object-contain rounded-lg"
+              onClick={(e) => e.stopPropagation()} // prevent closing when clicking image
+            />
 
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              paginate(1);
-            }}
-            className="absolute right-5 text-white text-3xl"
-          >
-            ▶
-          </button>
-        </>
-      )}
-    </motion.div>
-  )}
-</AnimatePresence>
+            {/* Close Button */}
+            <button
+              onClick={() => setIsPreviewOpen(false)}
+              className="absolute top-5 right-5 text-white text-2xl"
+            >
+              ✕
+            </button>
+
+            {/* Navigation */}
+            {images.length > 1 && (
+              <>
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    paginate(-1);
+                  }}
+                  className="absolute left-5 text-white text-3xl"
+                >
+                  ◀
+                </button>
+
+                <button
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    paginate(1);
+                  }}
+                  className="absolute right-5 text-white text-3xl"
+                >
+                  ▶
+                </button>
+              </>
+            )}
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 }
