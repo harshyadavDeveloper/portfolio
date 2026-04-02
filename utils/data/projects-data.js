@@ -3,7 +3,7 @@ import crefin from "/public/image/crefin.jpg";
 import realEstate from "/public/image/real-estate.jpg";
 import travel from "/public/image/travel.jpg";
 
-export const personalProjects  = [
+export const personalProjects = [
   {
     id: 0,
     name: "Chatify",
@@ -21,7 +21,11 @@ export const personalProjects  = [
     role: "Developer",
     code: "https://github.com/harshyadavDeveloper/chatify",
     demo: "https://chatify-2yqyw.sevalla.app",
-    // image: crefin,
+    images: [
+      "/image/chatify/chatify-1.png",
+      "/image/chatify/chatify-2.png",
+      "/image/chatify/chatify-3.png",
+    ],
   },
   {
     id: 1,
@@ -117,26 +121,26 @@ export const personalProjects  = [
   },
 ];
 
-export const professionalProjects  = [
+export const professionalProjects = [
   {
     name: "Company Dashboard",
     tools: ["React", "Redux"],
     role: "Frontend Engineer",
     description: "Worked at XYZ company",
     code: "",
-    demo: ""
-  }
+    demo: "",
+  },
 ];
 
-export const freelanceProjects  = [
+export const freelanceProjects = [
   {
     name: "Client Website",
     tools: ["Next.js"],
     role: "Freelancer",
     description: "Built for a client",
     code: "",
-    demo: ""
-  }
+    demo: "",
+  },
 ];
 
 // Do not remove any property.

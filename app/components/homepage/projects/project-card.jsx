@@ -6,11 +6,7 @@ import Image from "next/image";
 import Carousel from "../../Carousel";
 
 function ProjectCard({ project }) {
-  const images = [
-    "https://images.unsplash.com/photo-1498050108023-c5249f4df085",
-    "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
-    "https://images.unsplash.com/photo-1518779578993-ec3579fee39f",
-  ];
+
 
   const [current, setCurrent] = React.useState(0);
 
@@ -26,7 +22,10 @@ function ProjectCard({ project }) {
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full overflow-hidden">
 
       {/* 🔥 Image Carousel */}
-      <Carousel />
+      <Carousel
+        images={project.images}
+        projectName={project.name}
+      />
 
       {/* Existing UI */}
       <div className="flex flex-row">
