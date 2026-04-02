@@ -70,7 +70,9 @@ export const personalProjects = [
     role: "Developer",
     code: "https://github.com/harshyadavDeveloper/notezipper-frontend",
     demo: "https://personalnotezipper.netlify.app",
-    // image: crefin,
+    images: [
+      "/image/notezipper/note-zipper-1.png",
+    ],
   },
 
   {
