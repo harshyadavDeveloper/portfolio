@@ -160,23 +160,77 @@ export const personalProjects = [
 
 export const professionalProjects = [
   {
-    name: "Company Dashboard",
-    tools: ["React", "Redux"],
-    role: "Frontend Engineer",
-    description: "Worked at XYZ company",
-    code: "",
+    name: "Amruth E-mart and Admin Panel",
+    tools: ["React", "Context API"],
+    role: "Software Developer",
+    description: "Worked at Dreamlogic Infosystems",
+    // code: "",
     demo: "",
+    images:[
+      "/image/emart/emart-1.png",
+      "/image/emart/emart-2.png",
+    ]
+  },
+  {
+    name: "Salcete Pharmacy App",
+    tools: ["Flutter", "Clean Architecture"],
+    role: "Software Developer",
+    description: "Worked at Dreamlogic Infosystems",
+    // code: "",
+    demo: "https://play.google.com/store/apps/details?id=com.salcete.pharmacy_android",
+    images:[
+      "/image/pharma/pharma-1.jpg",
+      "/image/pharma/pharma-2.jpg",
+      "/image/pharma/pharma-3.jpg",
+      "/image/pharma/pharma-4.jpg",
+    ]
+  },
+  {
+    name: "GELTM",
+    tools: ["Flutter", "Provider"],
+    role: "Software Engineer",
+    description: "Worked at Goa Electronics Limited",
+    // code: "",
+    demo: "https://play.google.com/store/apps/details?id=com.geltm&pcampaignid=web_share",
+    images:[
+      "/image/geltm/geltm-1.png",
+      "/image/geltm/geltm-2.png",
+      "/image/geltm/geltm-3.png",
+      "/image/geltm/geltm-4.png",
+    ]
+  },
+  {
+    name: "Goa GIS Survey",
+    tools: ["Java", "XML"],
+    role: "Software Engineer",
+    description: "Worked at Goa Electronics Limited",
+    // code: "",
+    demo: "https://play.google.com/store/apps/details?id=com.gel.onemapgoa&pcampaignid=web_share",
+    images:[
+      "/image/gis/gis-1.png",
+      "/image/gis/gis-2.png",
+      "/image/gis/gis-3.png",
+      "/image/gis/gis-4.png",
+    ]
   },
 ];
 
 export const freelanceProjects = [
   {
-    name: "Client Website",
-    tools: ["Next.js"],
+    name: "NDMIC Website",
+    tools: ["Reactjs", "Nodejs", "MySQL", "Bootstrap"],
     role: "Freelancer",
     description: "Built for a client",
-    code: "",
-    demo: "",
+    // code: "N/A",
+    demo: "https://ndmic.com",
+    images:[
+      "/image/ndmic/ndmic-1.png",
+      "/image/ndmic/ndmic-2.png",
+      "/image/ndmic/ndmic-3.png",
+      "/image/ndmic/ndmic-4.png",
+      "/image/ndmic/ndmic-5.png",
+      "/image/ndmic/ndmic-6.png",
+    ]
   },
 ];
 
