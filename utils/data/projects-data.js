@@ -149,7 +149,11 @@ export const personalProjects = [
     tools: ["Flutter"],
     code: "https://github.com/harshyadavDeveloper/bmi_miniapp_flutter",
     demo: "",
-    // image: ayla,
+    images: [
+      "/image/bmi-mini-app/bmi-1.png",
+      "/image/bmi-mini-app/bmi-2.png",
+      "/image/bmi-mini-app/bmi-3.png",
+    ],
     role: "Android Developer",
   },
 ];
