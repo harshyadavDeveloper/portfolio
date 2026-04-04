@@ -101,7 +101,7 @@ export const personalProjects = [
     tools: ["HTML", "CSS", "Rapid API", "Material UI"],
     role: "Developer",
     code: "https://github.com/harshyadavDeveloper/gym_app",
-    demo: "",
+    demo: "https://personal-fitness-exercise.netlify.app/",
     images: [
       "/image/fitness-app/fitness-1.png",
       "/image/fitness-app/fitness-2.png",
@@ -121,7 +121,12 @@ export const personalProjects = [
     code: "https://github.com/harshyadavDeveloper/TitTacToe",
     role: "Developer",
     demo: "https://harshtoetictac.netlify.app/",
-    // image: realEstate,
+    images: [
+      "/image/tic-tac-toe/tic-1.png",
+      "/image/tic-tac-toe/tic-2.png",
+      "/image/tic-tac-toe/tic-3.png",
+      
+    ],
   },
   {
     id: 7,
