@@ -1,3 +1,4 @@
+import { images } from "@/next.config";
 import ayla from "/public/image/ayla.jpg";
 import crefin from "/public/image/crefin.jpg";
 import realEstate from "/public/image/real-estate.jpg";
@@ -84,7 +85,12 @@ export const personalProjects = [
     role: "Developer",
     code: "https://github.com/harshyadavDeveloper/country_facts",
     demo: "https://coutryunknownfacts.netlify.app/",
-    // image: travel, // Assign the value of the variable containing the image path
+    images: [
+      "/image/world-whispers/w-w-1.png",
+      "/image/world-whispers/w-w-2.png",
+      "/image/world-whispers/w-w-3.png",
+      "/image/world-whispers/w-w-4.png",
+    ], 
   },
 
   {
@@ -96,7 +102,14 @@ export const personalProjects = [
     role: "Developer",
     code: "https://github.com/harshyadavDeveloper/gym_app",
     demo: "",
-    // image: crefin,
+    images: [
+      "/image/fitness-app/fitness-1.png",
+      "/image/fitness-app/fitness-2.png",
+      "/image/fitness-app/fitness-3.png",
+      "/image/fitness-app/fitness-4.png",
+      "/image/fitness-app/fitness-5.png",
+      "/image/fitness-app/fitness-6.png",
+    ],
   },
   {
     id: 6,
