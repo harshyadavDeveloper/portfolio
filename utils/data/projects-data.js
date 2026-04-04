@@ -136,7 +136,9 @@ export const personalProjects = [
     tools: ["ReactJS", "Material UI", "socket.io"],
     code: "https://github.com/harshyadavDeveloper/ChessGame",
     demo: "",
-    // image: ayla,
+    images: [
+      "/image/chess-game/chess.png",
+    ],
     role: "Developer",
   },
   {
