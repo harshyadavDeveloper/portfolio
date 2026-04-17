@@ -33,11 +33,11 @@ function ContactForm() {
     } else {
       setError({ ...error, required: false });
     }
-  
+
     const serviceID = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
     const templateID = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
     const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
-  
+
     try {
       // Pass name and email as additional parameters
       const templateParams = {
@@ -46,9 +46,9 @@ function ContactForm() {
         from_email: input.email,
         message: input.message,
       };
-  
+
       const res = await emailjs.send(serviceID, templateID, templateParams, publicKey);
-  
+
       if (res.status === 200) {
         toast.success('Message sent successfully!');
         setInput({
@@ -61,7 +61,7 @@ function ContactForm() {
       toast.error(error?.text || error);
     }
   };
-  
+
 
   return (
     <div className="">

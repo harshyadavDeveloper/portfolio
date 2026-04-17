@@ -3,7 +3,7 @@ import ProjectCard from './project-card';
 const Projects = ({ title, projects }) => {
   return (
     <div className="relative z-50 my-12 lg:my-24">
-      
+
       {/* Section Title */}
       <div className="sticky top-10">
         <div className="flex items-center justify-start relative">

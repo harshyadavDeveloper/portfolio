@@ -130,8 +130,8 @@ function Carousel({ images = [], projectName = "Project" }) {
                     setCurrent([index, index > current ? 1 : -1])
                   }
                   className={`w-2.5 h-2.5 rounded-full transition-all ${index === current
-                      ? "bg-white scale-110"
-                      : "bg-white/50"
+                    ? "bg-white scale-110"
+                    : "bg-white/50"
                     }`}
                 />
               ))}

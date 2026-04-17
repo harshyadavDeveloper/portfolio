@@ -170,7 +170,7 @@ export const personalProjects = [
     ],
     role: "Android Developer",
   },
-   {
+  {
     id: 10,
     name: "Mini TODO App",
     description:
