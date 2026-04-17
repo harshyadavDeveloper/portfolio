@@ -172,7 +172,7 @@ export const personalProjects = [
   },
    {
     id: 10,
-    name: "BMI Mini app",
+    name: "Mini TODO App",
     description:
       "A modern, responsive Todo application built with React featuring task scheduling, dark/light theme persistence, and a clean UI. Users can add tasks with time, mark them complete, and manage their day efficiently with an intuitive interface.",
     tools: ["Reactjs"],
