@@ -177,7 +177,7 @@ export const personalProjects = [
       "A modern, responsive Todo application built with React featuring task scheduling, dark/light theme persistence, and a clean UI. Users can add tasks with time, mark them complete, and manage their day efficiently with an intuitive interface.",
     tools: ["Reactjs"],
     code: "https://github.com/harshyadavDeveloper/mini-to-do-project",
-    demo: "",
+    demo: "https://my-mini-to-do.netlify.app/",
     images: [
       "/image/to-do/todo-1.png",
       "/image/to-do/todo-2.png",
