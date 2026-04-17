@@ -170,6 +170,21 @@ export const personalProjects = [
     ],
     role: "Android Developer",
   },
+   {
+    id: 10,
+    name: "BMI Mini app",
+    description:
+      "I have created a simple flutter application in which you can see your body mass index by entering the relative information.",
+    tools: ["Reactjs"],
+    code: "https://github.com/harshyadavDeveloper/mini-to-do-project",
+    demo: "",
+    images: [
+      "/image/to-do/todo-1.png",
+      "/image/to-do/todo-2.png",
+      "/image/to-do/todo-3.png",
+    ],
+    role: "Software Developer",
+  },
 ];
 
 export const professionalProjects = [
