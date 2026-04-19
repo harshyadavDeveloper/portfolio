@@ -64,8 +64,28 @@ export const personalProjects = [
     ],
     role: "Android Developer",
   },
+
   {
     id: 3,
+    name: "Status Hub",
+    description:
+      "A full-featured, offline-first Hindu Panchang app for Android. Computes all five Panchang elements astronomically on-device — no API, no internet dependency, works anywhere. With Language toggle",
+    tools: ["Flutter", "Firebase"],
+    code: "https://github.com/harshyadavDeveloper/status_hub",
+    demo: "",
+    images: [
+      "/image/status-hub/status-1.jpeg",
+      "/image/status-hub/status-2.jpeg",
+      "/image/status-hub/status-3.jpeg",
+      "/image/status-hub/status-4.jpeg",
+      "/image/status-hub/status-5.jpeg",
+      "/image/status-hub/status-6.jpeg",
+      "/image/status-hub/status-7.jpeg",
+    ],
+    role: "Flutter Developer",
+  },
+  {
+    id: 4,
     name: "Service App",
     description:
       "This MERN stack project showcases a dynamic website with CRUD operations and service displays. The React frontend, hosted on Netlify, utilizes Context API, useState, and useEffect for efficient state management. The Node.js backend, deployed on Render, implements controllers, routes, services, and token handling. MongoDB serves as the database, ensuring seamless data flow between frontend and backend components.",
@@ -82,7 +102,7 @@ export const personalProjects = [
   },
 
   {
-    id: 4,
+    id: 5,
     name: "Notezipper",
     description:
       "NoteZipper is a task management web application that allows users to register or log in and create notes to track their daily tasks. Users can add, edit, and delete notes as needed, ensuring an organized workflow. The platform includes a filtering feature that enables users to sort notes based on their creation date, making it easy to find relevant tasks. A secure authentication system ensures data privacy, while a responsive interface enhances usability. NoteZipper aims to simplify task tracking, providing a seamless and efficient note-taking experience to help users stay productive and organized in their daily routines.",
@@ -94,7 +114,7 @@ export const personalProjects = [
   },
 
   {
-    id: 5,
+    id: 6,
     name: "World Whispers",
     description:
       "A dynamic website offering fascinating and verified facts about countries worldwide, enabling users to explore cultural, historical, and geographical insights with ease.",
@@ -111,7 +131,7 @@ export const personalProjects = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Fitness App ",
     description:
       "Creared a fitness app functionality to choose exercise categories and specofic muscle groups, brose more thaan 1000 exercises with practical examples, pagination, exercise details, pool related videos from youtube and display similar exercises.",
@@ -129,7 +149,7 @@ export const personalProjects = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     name: "TIC TAC TOE ",
     description:
       "Designed and developed a fully web-based Tic tac toe game using HTML, CSS and JavaScript to deepen my understanding of front-end web technologies. The game allows the user to complete the game in real time, with interactive features such as highlighting winning and preventing invalid moves. ",
@@ -145,7 +165,7 @@ export const personalProjects = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     name: "Chess Game",
     description:
       "I have created a fast and responsive chess game with real time multiplayer functionality.",
@@ -156,7 +176,7 @@ export const personalProjects = [
     role: "Developer",
   },
   {
-    id: 9,
+    id: 10,
     name: "BMI Mini app",
     description:
       "I have created a simple flutter application in which you can see your body mass index by entering the relative information.",
@@ -171,7 +191,7 @@ export const personalProjects = [
     role: "Android Developer",
   },
   {
-    id: 10,
+    id: 11,
     name: "Mini TODO App",
     description:
       "A modern, responsive Todo application built with React featuring task scheduling, dark/light theme persistence, and a clean UI. Users can add tasks with time, mark them complete, and manage their day efficiently with an intuitive interface.",
@@ -256,6 +276,22 @@ export const freelanceProjects = [
       "/image/ndmic/ndmic-4.png",
       "/image/ndmic/ndmic-5.png",
       "/image/ndmic/ndmic-6.png",
+    ],
+  },
+  {
+    name: "NDMIC Admin Panel",
+    tools: ["Reactjs", "Nodejs", "MySQL", "Bootstrap"],
+    role: "Freelancer",
+    description: "Built for a client",
+    // code: "N/A",
+    demo: "https://ndmic.com/admin",
+    images: [
+      "/image/ndmic-admin/nadmin-1.png",
+      "/image/ndmic-admin/nadmin-2.png",
+      "/image/ndmic-admin/nadmin-3.png",
+      "/image/ndmic-admin/nadmin-4.png",
+      "/image/ndmic-admin/nadmin-5.png",
+      "/image/ndmic-admin/nadmin-6.png",
     ],
   },
 ];
