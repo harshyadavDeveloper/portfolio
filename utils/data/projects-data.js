@@ -296,6 +296,121 @@ export const freelanceProjects = [
   },
 ];
 
+export const openSourceProjects = [
+  {
+    id: 0,
+    name: "smart_date_formatter",
+    type: "Flutter Package",
+    description:
+      "A lightweight Flutter/Dart package for smart, readable, and flexible date formatting with localization and relative time support.",
+    tools: ["Flutter", "Dart"],
+    role: "Creator",
+    github: "https://github.com/harshyadavDeveloper/smart_date_formatter",
+    pub: "https://pub.dev/packages/smart_date_formatter",
+  },
+
+  {
+    id: 1,
+    name: "@dungeonmaster/snaputils",
+    type: "NPM Package",
+    description:
+      "A lightweight, zero-dependency utility library for JavaScript & React apps — string, number, date, validation, array, object and color utilities",
+    tools: ["JavaScript", "Node.js"],
+    role: "Creator",
+    github: "https://github.com/harshyadavDeveloper/snaputils",
+    npm: "https://www.npmjs.com/package/@dungeonmaster/snaputils",
+  },
+
+  {
+    id: 2,
+    name: "rename_app",
+    type: "Open Source Contribution",
+    description:
+      "Resolved and merged an open issue in the rename_app Flutter package by fixing platform-specific app renaming behavior and improving package reliability.",
+    tools: ["Flutter", "Dart"],
+    role: "Open Source Contributor",
+
+    github: "https://github.com/Syed-Waleed-Shah/rename_app/pull/21",
+
+    repository: "https://github.com/Syed-Waleed-Shah/rename_app",
+
+    status: "Merged PR",
+
+    contributionType: "Bug Fix",
+
+    issue: "https://github.com/Syed-Waleed-Shah/rename_app/issues",
+
+    highlights: [
+      "Solved an existing open issue",
+      "Created and merged pull request",
+      "Contributed to public Flutter ecosystem",
+    ],
+  },
+  {
+    id: 3,
+    name: "Flutter Website Docs",
+    type: "Open Source Contribution",
+    description:
+      "Contributed improvements and fixes to the official Flutter documentation website by submitting pull requests that were successfully reviewed and merged.",
+    tools: ["Flutter", "Dart", "Markdown"],
+    role: "Open Source Contributor",
+
+    github: "https://github.com/flutter/website/pull/13325",
+
+    repository: "https://github.com/flutter/website",
+
+    status: "Merged PR",
+
+    highlights: [
+      "Contributed to official Flutter documentation",
+      "Created and merged pull request",
+      "Improved developer documentation experience",
+    ],
+  },
+  {
+    id: 4,
+    name: "Flutter Website Docs",
+    type: "Open Source Contribution",
+    description:
+      "Submitted and merged a contribution to the official Flutter website repository, helping improve documentation and developer resources for the Flutter ecosystem.",
+    tools: ["Flutter", "Dart", "Markdown"],
+    role: "Open Source Contributor",
+
+    github: "https://github.com/flutter/website/pull/13309",
+
+    repository: "https://github.com/flutter/website",
+
+    status: "Merged PR",
+
+    highlights: [
+      "Open-source contribution to Flutter",
+      "Merged contribution in official repository",
+      "Enhanced Flutter documentation",
+    ],
+  },
+  {
+    id: 5,
+    name: "Dart Documentation Website",
+    type: "Open Source Contribution",
+    description:
+      "Contributed to the official Dart documentation website by submitting a pull request that was successfully reviewed and merged, helping improve developer documentation and ecosystem resources.",
+    tools: ["Dart", "Markdown", "Documentation"],
+    role: "Open Source Contributor",
+
+    github: "https://github.com/dart-lang/site-www/pull/7270",
+
+    repository: "https://github.com/dart-lang/site-www",
+
+    status: "Merged PR",
+
+    highlights: [
+      "Contributed to official Dart repository",
+      "Merged pull request",
+      "Improved developer documentation",
+    ],
+  },
+];
+
 // Do not remove any property.
 // Leave it blank instead as shown below
 
