@@ -9,25 +9,69 @@ const GitHubSVG = () => (
 );
 
 const PullRequestSVG = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <circle cx="18" cy="18" r="3" /><circle cx="6" cy="6" r="3" /><path d="M13 6h3a2 2 0 0 1 2 2v7" /><line x1="6" y1="9" x2="6" y2="21" />
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="18" cy="18" r="3" />
+    <circle cx="6" cy="6" r="3" />
+    <path d="M13 6h3a2 2 0 0 1 2 2v7" />
+    <line x1="6" y1="9" x2="6" y2="21" />
   </svg>
 );
 
 const PackageSVG = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21" /><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" /><polyline points="3.27 6.96 12 12.01 20.73 6.96" /><line x1="12" y1="22.08" x2="12" y2="12" />
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <line x1="16.5" y1="9.4" x2="7.5" y2="4.21" />
+    <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />
+    <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+    <line x1="12" y1="22.08" x2="12" y2="12" />
   </svg>
 );
 
 const ExternalLinkSVG = () => (
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" y1="14" x2="21" y2="3" />
+  <svg
+    width="16"
+    height="16"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+    <polyline points="15 3 21 3 21 9" />
+    <line x1="10" y1="14" x2="21" y2="3" />
   </svg>
 );
 
 const CheckSVG = () => (
-  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+  <svg
+    width="14"
+    height="14"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
     <polyline points="20 6 9 17 4 12" />
   </svg>
 );
@@ -35,7 +79,6 @@ const CheckSVG = () => (
 const OpenSourceCard = ({ project }) => {
   return (
     <div className="group relative overflow-hidden rounded-2xl border border-[#1b2c68a0] bg-gradient-to-br from-[#0d1224] to-[#0a0d37] p-6 transition-all duration-300 hover:-translate-y-1 hover:border-cyan-400/40">
-
       <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-300 bg-[radial-gradient(circle_at_top_right,_rgba(34,211,238,0.15),transparent_40%)]" />
 
       {/* Header */}
@@ -61,7 +104,10 @@ const OpenSourceCard = ({ project }) => {
       {project.tools?.length > 0 && (
         <div className="relative z-10 mt-5 flex flex-wrap gap-2">
           {project.tools.map((tool, index) => (
-            <span key={index} className="rounded-md bg-[#1a1443] px-3 py-1 text-xs text-cyan-300">
+            <span
+              key={index}
+              className="rounded-md bg-[#1a1443] px-3 py-1 text-xs text-cyan-300"
+            >
               {tool}
             </span>
           ))}
@@ -90,7 +136,10 @@ const OpenSourceCard = ({ project }) => {
           <p className="mb-3 text-sm font-medium text-white">Highlights</p>
           <ul className="space-y-2">
             {project.highlights.map((item, index) => (
-              <li key={index} className="flex items-start gap-2 text-sm text-gray-300">
+              <li
+                key={index}
+                className="flex items-start gap-2 text-sm text-gray-300"
+              >
                 <span className="mt-1 h-2 w-2 rounded-full bg-cyan-400 shrink-0" />
                 {item}
               </li>
@@ -102,36 +151,56 @@ const OpenSourceCard = ({ project }) => {
       {/* Links */}
       <div className="relative z-10 mt-8 flex flex-wrap gap-3">
         {project.github && (
-          <a href={project.github} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300 transition hover:bg-cyan-400/20">
+          <a
+            href={project.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300 transition hover:bg-cyan-400/20"
+          >
             <PullRequestSVG />
             View PR
           </a>
         )}
         {project.repository && (
-          <a href={project.repository} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-200 transition hover:bg-white/10">
+          <a
+            href={project.repository}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-4 py-2 text-sm text-gray-200 transition hover:bg-white/10"
+          >
             <GitHubSVG />
             Repository
           </a>
         )}
         {project.pub && (
-          <a href={project.pub} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-indigo-400/20 bg-indigo-400/10 px-4 py-2 text-sm text-indigo-300 transition hover:bg-indigo-400/20">
+          <a
+            href={project.pub}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-indigo-400/20 bg-indigo-400/10 px-4 py-2 text-sm text-indigo-300 transition hover:bg-indigo-400/20"
+          >
             <PackageSVG />
             pub.dev
           </a>
         )}
         {project.npm && (
-          <a href={project.npm} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-red-400/20 bg-red-400/10 px-4 py-2 text-sm text-red-300 transition hover:bg-red-400/20">
+          <a
+            href={project.npm}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-red-400/20 bg-red-400/10 px-4 py-2 text-sm text-red-300 transition hover:bg-red-400/20"
+          >
             <PackageSVG />
             npm
           </a>
         )}
         {project.issue && (
-          <a href={project.issue} target="_blank" rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-lg border border-yellow-400/20 bg-yellow-400/10 px-4 py-2 text-sm text-yellow-300 transition hover:bg-yellow-400/20">
+          <a
+            href={project.issue}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-2 rounded-lg border border-yellow-400/20 bg-yellow-400/10 px-4 py-2 text-sm text-yellow-300 transition hover:bg-yellow-400/20"
+          >
             <ExternalLinkSVG />
             Issue
           </a>

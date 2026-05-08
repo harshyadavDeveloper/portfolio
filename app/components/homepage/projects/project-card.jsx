@@ -6,8 +6,6 @@ import Image from "next/image";
 import Carousel from "../../Carousel";
 
 function ProjectCard({ project }) {
-
-
   const [current, setCurrent] = React.useState(0);
 
   const nextSlide = () => {
@@ -20,12 +18,8 @@ function ProjectCard({ project }) {
 
   return (
     <div className="from-[#0d1224] border-[#1b2c68a0] relative rounded-lg border bg-gradient-to-r to-[#0a0d37] w-full overflow-hidden">
-
       {/* 🔥 Image Carousel */}
-      <Carousel
-        images={project.images}
-        projectName={project.name}
-      />
+      <Carousel images={project.images} projectName={project.name} />
 
       {/* Existing UI */}
       <div className="flex flex-row">
@@ -82,9 +76,7 @@ function ProjectCard({ project }) {
 
           <div className="ml-4 lg:ml-8 mr-2">
             <span className="text-white">Description:</span>
-            <span className="text-cyan-400">
-              {" " + project.description},
-            </span>
+            <span className="text-cyan-400">{" " + project.description},</span>
           </div>
 
           <div className="ml-4 lg:ml-8 mr-2">

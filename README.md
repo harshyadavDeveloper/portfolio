@@ -1,13 +1,7 @@
-
-
 ```
 node --version
 git --version
 ```
-
-
-
-
 
 To Fork the repo click on the fork button at the top right of the page. Once the repo is forked open your terminal and perform the following commands
 
@@ -37,4 +31,3 @@ yarn dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 ---
-

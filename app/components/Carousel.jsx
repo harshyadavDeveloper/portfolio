@@ -62,13 +62,9 @@ function Carousel({ images = [], projectName = "Project" }) {
 
           <div className="text-4xl mb-2">📦</div>
 
-          <p className="text-sm tracking-wide text-gray-300">
-            {projectName}
-          </p>
+          <p className="text-sm tracking-wide text-gray-300">{projectName}</p>
 
-          <p className="text-xs text-gray-500">
-            Preview Coming Soon
-          </p>
+          <p className="text-xs text-gray-500">Preview Coming Soon</p>
         </div>
       ) : (
         <>
@@ -126,13 +122,10 @@ function Carousel({ images = [], projectName = "Project" }) {
               {images.map((_, index) => (
                 <button
                   key={index}
-                  onClick={() =>
-                    setCurrent([index, index > current ? 1 : -1])
-                  }
-                  className={`w-2.5 h-2.5 rounded-full transition-all ${index === current
-                    ? "bg-white scale-110"
-                    : "bg-white/50"
-                    }`}
+                  onClick={() => setCurrent([index, index > current ? 1 : -1])}
+                  className={`w-2.5 h-2.5 rounded-full transition-all ${
+                    index === current ? "bg-white scale-110" : "bg-white/50"
+                  }`}
                 />
               ))}
             </div>

@@ -17,10 +17,7 @@ const OpenSourceSection = ({ title, projects }) => {
       {/* Cards */}
       <div className="pt-20 grid grid-cols-1 lg:grid-cols-2 gap-6">
         {projects?.map((project) => (
-          <OpenSourceCard
-            key={project.id}
-            project={project}
-          />
+          <OpenSourceCard key={project.id} project={project} />
         ))}
       </div>
     </div>
