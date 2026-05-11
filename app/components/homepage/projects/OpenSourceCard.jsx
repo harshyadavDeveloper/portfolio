@@ -158,10 +158,10 @@ const OpenSourceCard = ({ project }) => {
             className="inline-flex items-center gap-2 rounded-lg border border-cyan-400/20 bg-cyan-400/10 px-4 py-2 text-sm text-cyan-300 transition hover:bg-cyan-400/20"
           >
             {project.type === "Open Source Contribution" ? (
-        <><PullRequestSVG /> View PR</>
-      ) : (
-        <><GitHubSVG /> View Source</>
-      )}
+              <><PullRequestSVG /> View PR</>
+            ) : (
+              <><GitHubSVG /> View Source</>
+            )}
           </a>
         )}
         {project.repository && (
