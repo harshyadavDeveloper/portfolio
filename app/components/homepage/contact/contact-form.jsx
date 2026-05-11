@@ -46,6 +46,9 @@ function ContactForm() {
         from_email: input.email,
         message: input.message,
       };
+      console.log('serviceID', serviceID);
+      console.log('templateID', templateID);
+      console.log('publicKey', publicKey);
 
       const res = await emailjs.send(
         serviceID,
@@ -70,7 +73,7 @@ function ContactForm() {
   return (
     <div className="">
       <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
-        Contact with me
+        Contact me
       </p>
       <div className="max-w-3xl text-white rounded-lg border border-[#464c6a] p-3 lg:p-5">
         <p className="text-sm text-[#d3d8e8]">
