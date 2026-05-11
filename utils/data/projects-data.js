@@ -323,6 +323,18 @@ export const openSourceProjects = [
 
   {
     id: 2,
+    name: "fl_pretty_charts",
+    type: "Flutter Package",
+    description:
+      "A beautiful, animated Flutter charts package. Includes Bar, Line, Pie/Donut, and Radar charts. Zero dependencies — pure Flutter custom painter.",
+    tools: ["Flutter", "Dart"],
+    role: "Creator",
+    github: "https://github.com/harshyadavDeveloper/fl_pretty_charts",
+    pub: "https://pub.dev/packages/fl_pretty_charts",
+  },
+
+  {
+    id: 3,
     name: "rename_app",
     type: "Open Source Contribution",
     description:
@@ -347,7 +359,7 @@ export const openSourceProjects = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     name: "Flutter Website Docs",
     type: "Open Source Contribution",
     description:
@@ -368,7 +380,7 @@ export const openSourceProjects = [
     ],
   },
   {
-    id: 4,
+    id: 6,
     name: "Flutter Website Docs",
     type: "Open Source Contribution",
     description:
@@ -389,7 +401,7 @@ export const openSourceProjects = [
     ],
   },
   {
-    id: 5,
+    id: 7,
     name: "Dart Documentation Website",
     type: "Open Source Contribution",
     description:
