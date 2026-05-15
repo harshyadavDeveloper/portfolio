@@ -17,20 +17,20 @@ function AboutSection() {
           <p className="font-medium mb-5 text-[#16f2b3] text-xl uppercase">
             Who I am?
           </p>
-          <p className="text-gray-200 text-sm lg:text-lg">
+          <p className="text-gray-200 text-sm lg:text-lg leading-8 whitespace-pre-line">
             {personalData.description}
           </p>
         </div>
-        <div className="flex justify-center order-1 lg:order-2">
-          <Image
-            src={"/harsh.jpg"}
-            width={280}
-            height={280}
-            alt="Harsh Yadav"
-            className="rounded-lg transition-all duration-1000 grayscale hover:grayscale-0 hover:scale-110 cursor-pointer"
-            // Inline CSS for rotation
-          />
-        </div>
+       <div className="flex justify-center lg:justify-end items-start order-1 lg:order-2">
+  <div className="relative w-[280px] h-[380px] flex-shrink-0">
+    <Image
+      src={"/harsh.jpg"}
+      fill
+      alt="Harsh Yadav"
+      className="rounded-xl object-cover transition-all duration-700 grayscale hover:grayscale-0 hover:scale-105"
+    />
+  </div>
+</div>
       </div>
     </div>
   );
