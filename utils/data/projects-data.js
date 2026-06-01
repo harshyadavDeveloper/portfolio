@@ -214,7 +214,7 @@ export const professionalProjects = [
     role: "Mobile Application Developer",
     description: "Worked at Uniqbizz Solutions Pvt Ltd",
     // code: "",
-    demo: "",
+    demo: "https://play.google.com/store/apps/details?id=com.uniqbizz.bizzmirth_app&hl=en_IN",
     images: ["/image/emart/emart-1.png", "/image/emart/emart-2.png"],
   },
   {
