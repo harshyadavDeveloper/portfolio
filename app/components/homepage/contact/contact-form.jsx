@@ -46,9 +46,9 @@ function ContactForm() {
         from_email: input.email,
         message: input.message,
       };
-      console.log('serviceID', serviceID);
-      console.log('templateID', templateID);
-      console.log('publicKey', publicKey);
+      // console.log('serviceID', serviceID);
+      // console.log('templateID', templateID);
+      // console.log('publicKey', publicKey);
 
       const res = await emailjs.send(
         serviceID,

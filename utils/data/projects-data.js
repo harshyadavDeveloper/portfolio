@@ -209,6 +209,15 @@ export const personalProjects = [
 
 export const professionalProjects = [
   {
+    name: "Bizzmirth Holidays App",
+    tools: ["Dart", "Flutter", "Provider", "Firebase", "Hive"],
+    role: "Mobile Application Developer",
+    description: "Worked at Uniqbizz Solutions Pvt Ltd",
+    // code: "",
+    demo: "",
+    images: ["/image/emart/emart-1.png", "/image/emart/emart-2.png"],
+  },
+  {
     name: "Amruth E-mart and Admin Panel",
     tools: ["React", "Context API"],
     role: "Software Developer",
@@ -421,6 +430,53 @@ export const openSourceProjects = [
       "Improved developer documentation",
     ],
   },
+
+
+  {
+    id: 8,
+    name: "Flutter Website Docs",
+    type: "Open Source Contribution",
+    description:
+      "Contributed improvements to the official Flutter documentation website by submitting a pull request that was successfully reviewed and merged, helping enhance developer documentation and learning resources.",
+    tools: ["Flutter", "Dart", "Markdown"],
+    role: "Open Source Contributor",
+
+    github: "https://github.com/flutter/website/pull/13427",
+
+    repository: "https://github.com/flutter/website",
+
+    status: "Merged PR",
+
+    highlights: [
+      "Contributed to official Flutter documentation",
+      "Created and merged pull request",
+      "Improved developer learning resources",
+    ],
+  },
+
+  {
+    id: 9,
+    name: "Flutter Website Docs",
+    type: "Open Source Contribution",
+    description:
+      "Submitted and merged a contribution to the official Flutter website repository, helping improve documentation quality and developer experience across the Flutter ecosystem.",
+    tools: ["Flutter", "Dart", "Markdown"],
+    role: "Open Source Contributor",
+
+    github: "https://github.com/flutter/website/pull/13335",
+
+    repository: "https://github.com/flutter/website",
+
+    status: "Merged PR",
+
+    highlights: [
+      "Open-source contribution to Flutter",
+      "Merged contribution in official repository",
+      "Enhanced developer documentation",
+    ],
+  },
+
+
 ];
 
 // Do not remove any property.
