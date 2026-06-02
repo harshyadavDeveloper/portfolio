@@ -215,7 +215,16 @@ export const professionalProjects = [
     description: "Worked at Uniqbizz Solutions Pvt Ltd",
     // code: "",
     demo: "https://play.google.com/store/apps/details?id=com.uniqbizz.bizzmirth_app&hl=en_IN",
-    images: ["/image/emart/emart-1.png", "/image/emart/emart-2.png"],
+    images: [
+      "/image/bizzmirth/bizz-1.jpeg",
+      "/image/bizzmirth/bizz-2.jpeg",
+      "/image/bizzmirth/bizz-3.jpeg",
+      "/image/bizzmirth/bizz-4.jpeg",
+      "/image/bizzmirth/bizz-5.jpeg",
+      "/image/bizzmirth/bizz-6.jpeg",
+      "/image/bizzmirth/bizz-7.jpeg",
+
+    ],
   },
   {
     name: "Amruth E-mart and Admin Panel",
