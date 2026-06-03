@@ -10,6 +10,7 @@ function AboutSection() {
         <span className="bg-[#1a1443] w-fit text-white rotate-90 p-2 px-5 text-xl rounded-md">
           ABOUT ME
         </span>
+        
         <span className="h-36 w-[2px] bg-[#1a1443]"></span>
       </div>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
@@ -21,16 +22,16 @@ function AboutSection() {
             {personalData.description}
           </p>
         </div>
-       <div className="flex justify-center lg:justify-end items-start order-1 lg:order-2">
-  <div className="relative w-[280px] h-[380px] flex-shrink-0">
-    <Image
-      src={"/harsh.jpg"}
-      fill
-      alt="Harsh Yadav"
-      className="rounded-xl object-cover transition-all duration-700 grayscale hover:grayscale-0 hover:scale-105"
-    />
-  </div>
-</div>
+        <div className="flex justify-center lg:justify-end items-start order-1 lg:order-2">
+          <div className="relative w-[280px] h-[380px] flex-shrink-0">
+            <Image
+              src={"/harsh.jpg"}
+              fill
+              alt="Harsh Yadav"
+              className="rounded-xl object-cover transition-all duration-700 grayscale hover:grayscale-0 hover:scale-105"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
