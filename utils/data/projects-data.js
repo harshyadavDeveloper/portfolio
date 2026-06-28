@@ -45,25 +45,7 @@ export const personalProjects = [
       "/image/food-go/food-go-5.jpg",
     ],
   },
-  {
-    id: 2,
-    name: "Purna Panchang",
-    description:
-      "A full-featured, offline-first Hindu Panchang app for Android. Computes all five Panchang elements astronomically on-device — no API, no internet dependency, works anywhere. With Language toggle",
-    tools: ["Flutter"],
-    code: "https://github.com/harshyadavDeveloper/purna_panchang",
-    demo: "",
-    images: [
-      "/image/purna-panchang/purna-1.jpeg",
-      "/image/purna-panchang/purna-2.jpeg",
-      "/image/purna-panchang/purna-3.jpeg",
-      "/image/purna-panchang/purna-4.jpeg",
-      "/image/purna-panchang/purna-5.jpeg",
-      "/image/purna-panchang/purna-6.jpeg",
-      "/image/purna-panchang/purna-7.jpeg",
-    ],
-    role: "Android Developer",
-  },
+
 
   {
     id: 3,
@@ -280,6 +262,25 @@ export const professionalProjects = [
 ];
 
 export const freelanceProjects = [
+  {
+    // id: 2,
+    name: "Purna Panchang",
+    description:
+      "A full-featured, offline-first Hindu Panchang app for Android. Computes all five Panchang elements astronomically on-device — no API, no internet dependency, works anywhere. With Language toggle",
+    tools: ["Flutter"],
+    code: "",
+    demo: "https://play.google.com/store/apps/details?id=com.datathecodie.purnapanchang&pcampaignid=web_share",
+    images: [
+      "/image/purna-panchang/purna-1.jpeg",
+      "/image/purna-panchang/purna-2.jpeg",
+      "/image/purna-panchang/purna-3.jpeg",
+      "/image/purna-panchang/purna-4.jpeg",
+      "/image/purna-panchang/purna-5.jpeg",
+      "/image/purna-panchang/purna-6.jpeg",
+      "/image/purna-panchang/purna-7.jpeg",
+    ],
+    role: "Android Developer",
+  },
   {
     name: "NDMIC Website",
     tools: ["Reactjs", "Nodejs", "MySQL", "Bootstrap"],
